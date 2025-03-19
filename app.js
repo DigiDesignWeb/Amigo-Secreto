@@ -1,12 +1,10 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
 
-// app.js
-
 let amigos = []; // Array para almacenar los nombres de los amigos
 
 function agregarAmigo() {
-    const nombreInput = document.getElementById('amigo'); // ID cambiado a 'amigo'
+    const nombreInput = document.getElementById('amigo'); 
     const nombre = nombreInput.value.trim();
 
     if (nombre === '') {
@@ -41,8 +39,6 @@ function sortearAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     const amigoSorteado = amigos[indiceAleatorio];
 
-    const resultadoElemento = document.getElementById('resultado'); // ID cambiado a 'resultado'
-    resultadoElemento.innerHTML = `<li>El amigo secreto es: ${amigoSorteado}</li>`; // Agregado <li> para coincidir con la lista
+    const resultadoElemento = document.getElementById('resultado'); 
+    resultadoElemento.innerHTML = `<li>El amigo secreto es: ${amigoSorteado}</li>`; 
 }
-
-// Las funciones agregarAmigo y sortearAmigo son llamadas directamente desde el HTML con onclick.
